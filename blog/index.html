@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Blog · Mindsdb</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Create AI based apps in a few lines of code"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Blog · Mindsdb"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mindsdb.github.io/mindsdb/index.html"/><meta property="og:description" content="Create AI based apps in a few lines of code"/><meta property="og:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><link rel="shortcut icon" href="/mindsdb/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/mindsdb/css/main.css"/><script src="/mindsdb/js/codetabs.js"></script></head><body class="blog"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/mindsdb/"><img class="logo" src="/mindsdb/img/mindsdb_logo_white.png" alt="Mindsdb"/><h2 class="headerTitleWithLogo">Mindsdb</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/mindsdb/docs/installing-mindsdb" target="_self">Docs</a></li><li class=""><a href="https://github.com/mindsdb/mindsdb/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/blog/2016/03/11/blog-post">Blog Title</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="posts"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/mindsdb/blog/2016/03/11/blog-post">Blog Title</a></h1><p class="post-meta">March 11, 2016</p><div class="authorBlock"><p class="post-authorName"><a href="http://twitter.com/" target="_blank" rel="noreferrer noopener">Blog Author</a></p><div class="authorPhoto"><a href="http://twitter.com/" target="_blank" rel="noreferrer noopener"><img src="https://graph.facebook.com/100002976521003/picture/?height=200&amp;width=200" alt="Blog Author"/></a></div></div></header><article class="post-content"><div><span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
+</span></div><div class="read-more"><a class="button" href="/mindsdb/blog/2016/03/11/blog-post">Read More</a></div></article></div><div class="docs-prevnext"></div></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/mindsdb/" class="nav-home"><img src="/mindsdb/img/logo_bear.png" alt="Mindsdb" width="66" height="58"/></a><div><h5>Docs</h5><a href="/mindsdb/docs/installing-mindsdb">Getting started</a></div><div><h5>Community</h5><a href="https://medium.com/mindsdb" target="_blank" rel="noreferrer noopener">Medium</a><a href="https://www.facebook.com/MindsDB/" target="_blank">Facebook</a><a href="https://twitter.com/mindsdb?lang=en" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.youtube.com/channel/UC5_wBOLCWath6q1iTgPPD5A" target="_blank">Youtube</a></div><div><h5>More</h5><a href="/mindsdb/blog">Blog</a><a href="https://github.com/mindsdb/mindsdb">GitHub</a><a class="github-button" href="https://github.com/mindsdb/mindsdb" data-icon="octicon-star" data-count-href="/mindsdb/mindsdb/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 <a href="http://mindsdb.com/">Mindsdb</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
